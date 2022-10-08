@@ -1,0 +1,42 @@
+/* --------------------------------------- */
+/* BOOTSTRAP OVERRIDES */
+/* --------------------------------------- */
+
+.form-control {
+    font-size: 1.3rem;
+}
+.form-label {
+    font-size: 1.3rem;
+}
+
+.btn {
+    font-size: 1.3rem;
+    border-radius: 100px;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    &:hover {
+        color: white;
+    }
+    &:focus {
+        color: white;
+        box-shadow: none;
+    }
+    &:active {
+        color: white;
+        box-shadow: none;
+    }
+    &:active:focus {
+        color: white;
+        box-shadow: none;
+    }
+    &.btn-light {
+        color: #000000;
+    }
+}
+a {
+    color: $primary-main;
+    &:hover {
+        color: darken($primary-main, 10%);
+    }
+}

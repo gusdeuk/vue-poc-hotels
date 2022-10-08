@@ -1,0 +1,18 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+.tag-component {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+
+    display: inline-block;
+    // default colors
+    color: #fff;
+    background-color: rgb(172, 172, 172);
+}

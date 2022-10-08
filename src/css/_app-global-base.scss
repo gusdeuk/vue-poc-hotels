@@ -1,0 +1,29 @@
+/* --------------------------------------- */
+/* BASE MAIN SCOPE CSS */
+/* --------------------------------------- */
+
+html {
+    height: 100%;
+    // set easy calculation font size to the whole app,
+    // adjust REM to base 10px
+    // 1rem /* =10px */
+    // 1.4rem; /* =14px */
+    // 2.4rem; /* =24px */
+    font-size: 62.5%;
+    body {
+        //----------------------------------------------
+        // base font setup
+        font-size: 1.6rem; /* =16px */
+        font-weight: 400;
+
+        font-family: Poppins, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll !important;
+
+        color: #707070;
+        background-color: #f7f7f7;
+        height: 100%;
+    }
+}

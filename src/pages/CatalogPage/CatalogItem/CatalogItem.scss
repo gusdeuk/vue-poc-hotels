@@ -1,0 +1,97 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+@import "../../../css/common/palette";
+.catalog-item-component {
+    background-color: white;
+    height: 460px;
+    overflow: hidden;
+    border-radius: 10px 0 10px;
+    border: solid 2px #f3f1f1;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    position: relative;
+    &.selected {
+        transform: scale(1.1);
+        z-index: 1;
+        border: solid 7px #aad363;
+        background-color: #eaf5d8;
+    }
+    .name-wrap {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: $primary-main;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .address-wrap {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+    .price-wrap {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        .price-title {
+            padding: 5px 0;
+            font-size: 1.1rem;
+            border-bottom: dashed 1px #dcdcdc;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: $primary-main;
+        }
+        .price-container {
+            display: flex;
+            .item {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                .key {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: darken($secondary-main, 5%);
+                }
+                .value {
+                    font-size: 2rem;
+                    font-weight: 300;
+                    margin-left: 6px;
+                }
+            }
+            .item:last-child {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .tag-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #e0e0e0;
+        height: 45px;
+        overflow: hidden;
+        padding: 5px 5px;
+    }
+    .star-wrap {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-wrap {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        border-radius: 10px 0 10px;
+        margin-bottom: 10px;
+        img {
+            width: 200%;
+        }
+    }
+}

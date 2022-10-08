@@ -1,0 +1,35 @@
+/* --------------------------------------- */
+/* APP GLOBAL*/
+/* --------------------------------------- */
+
+.app-global {
+    height: 100%;
+    .main-wrapper {
+        $nav-height: 110px;
+        $foot-height: 30px;
+        .page-title {
+            font-size: 29px;
+            font-family: YanoneKaffeesatz;
+            font-weight: 300;
+            /* border-bottom: dashed 1px #dfdfdf; */
+            /* padding-bottom: 5px; */
+            /* margin-bottom: 10px; */
+            color: #f7f7f7;
+            background-color: $secondary-main;
+            padding: 2px 24px;
+            margin-bottom: 7px;
+            border-radius: 0 24px 0 24px;
+        }
+        .page-content {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content-wrapper {
+        .page-title {
+            text-align: center;
+        }
+    }
+}

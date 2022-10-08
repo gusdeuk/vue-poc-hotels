@@ -1,0 +1,50 @@
+/* ------------------------------------------------ */
+/* scoped styles */
+/* ------------------------------------------------ */
+@import "../../../css/common/palette";
+
+a {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 4px transparent;
+    // background-color: #fff;
+    transition: all 0.3s ease-out;
+    background-color: lighten($secondary-main, 50%);
+    max-width: 25%;
+    padding: 0 6px;
+
+    .label {
+        color: $secondary-main;
+        text-decoration: none;
+        font-size: 1.6rem;
+        position: relative;
+        top: 2px;
+    }
+    &:hover {
+        background-color: lighten($secondary-main, 40%);
+        .label {
+            color: darken($secondary-main, 20%);
+        }
+    }
+    &.router-link-exact-active {
+        .label {
+            color: $primary-main;
+        }
+        border-bottom: solid 7px lighten($primary-main, 20%);
+        background-color: lighten($primary-main, 35%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    a {
+        .label {
+            font-size: 1.2rem;
+        }
+        &.router-link-exact-active {
+            border-bottom: solid 3px lighten($primary-main, 20%);
+        }
+    }
+}

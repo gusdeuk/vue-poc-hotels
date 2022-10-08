@@ -1,0 +1,30 @@
+/* ------------------------------------------------ */
+/* scoped styles */
+/* ------------------------------------------------ */
+@import "../../css/common/palette";
+
+.footer-wrapper {
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: #fff;
+    background-color: $primary-main;
+    text-align: center;
+    text-align: right;
+    a {
+        display: inline-block;
+        color: #fff;
+        font-size: 1.1rem;
+        padding: 7px 15px;
+        // text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-wrapper {
+        text-align: center;
+    }
+}

@@ -1,0 +1,50 @@
+/* ------------------------------------------------ */
+/* globals styles vars and mixins */
+@import "./common/palette";
+@import "./common/mixins";
+@import "./common/variables";
+
+/* ------------------------------------------------ */
+/* bootstrap v5 */
+/* ------------------------------------------------ */
+// Override BS internal VARIABLES (PRE SCSS!!!)
+$primary: $primary-main;
+$secondary: $secondary-main;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+
+/*
+TODO: Replace this base stuff with Vuetify v3 or Quasar v3 when available
+https://v5.getbootstrap.com/
+https://v5.getbootstrap.com/docs/5.0/getting-started/contents/
+https://www.techiediaries.com/vue-bootstrap/
+*/
+// get bootstrap 5 reset / utils and grid only
+//@import "~bootstrap/dist/css/bootstrap-reboot.css";
+//@import "~bootstrap/dist/css/bootstrap-utilities.css";
+//@import "~bootstrap/dist/css/bootstrap-grid.css";
+
+// get bootstrap 5 full SCSS
+
+@import "~bootstrap/scss/bootstrap.scss";
+/* ------------------------------------------------ */
+/* animate css classes */
+@import "./animation/animate.scss";
+
+/* ------------------------------------------------ */
+/* webfonts >> local or remote */
+// @import "https://fonts.googleapis.com/css?family=Material+Icons";
+@import "../fonts/poppins/_stylesheet.css";
+@import "../fonts/yanone/_stylesheet.css";
+
+/* ------------------------------------------------ */
+/* globals styles / ui elements */
+@import "./app-global-base";
+@import "./app-global-general";
+@import "./app-global-bootstrap";
+@import "./app-global-other";
+@import "./lib/helpers";
+@import "./lib/scrollbars-custom";
+@import "./lib/transitions";

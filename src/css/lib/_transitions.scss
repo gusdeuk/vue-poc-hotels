@@ -1,0 +1,55 @@
+/* ----------------------------------------------------- */
+/* [fade-view] - animated transition for content area in EACH PAGE render > IN - OUT*/
+/* ----------------------------------------------------- */
+
+.fade-view-enter-active {
+    animation: custom-fade-in 0.5s ease-out;
+}
+.fade-view-leave-active {
+    animation: custom-fade-out 0.5s ease-in;
+}
+@keyframes custom-fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes custom-fade-out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------------------------- */
+/* [fade-simple] - transition for content area in routes */
+/* ----------------------------------------------------- */
+
+.fade-simple-enter-from,
+.fade-simple-leave-to {
+    opacity: 0;
+}
+
+.fade-simple-enter-active {
+    transition: opacity 0.6s ease-out;
+}
+
+.fade-simple-leave-active {
+    transition: opacity 0.6s ease-in;
+}
+
+.fade-simple-enter-to,
+.fade-simple-leave-from {
+    opacity: 1;
+}

@@ -1,0 +1,15 @@
+/* ------------------------------------------------ */
+/* scoped styles */
+/* ------------------------------------------------ */
+@import "../../css/common/palette";
+.navigation-menu {
+    flex: 1 1 50%;
+    display: flex;
+}
+
+@media screen and (max-width: 992px) {
+    .navigation-menu {
+        flex: 1 1 100%;
+        height: 30px;
+    }
+}

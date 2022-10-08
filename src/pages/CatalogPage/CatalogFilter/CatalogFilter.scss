@@ -1,0 +1,124 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+@import "../../../css/common/palette";
+.filter-component {
+    background-color: white;
+    margin-bottom: 14px;
+    border-radius: 24px 0 24px;
+    padding: 20px;
+    display: flex;
+
+    .column-1 {
+        flex: 1 0 350px;
+        max-width: 350px;
+
+        padding-top: 6px;
+        > div {
+            display: flex;
+            > div {
+                flex: 1 0 160px;
+                max-width: 160px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .column-2 {
+        padding-top: 6px;
+        flex: 1 0 auto;
+    }
+    .column-3 {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .customer-block {
+        display: flex;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        width: 100px;
+        .form-switch {
+            margin-left: 8px;
+            top: -4px;
+            position: relative;
+        }
+        .custom-label {
+            font-size: 1.1rem;
+        }
+    }
+    .dates-block {
+        display: flex;
+        > div {
+            flex: 1 0 220px;
+            padding-right: 10px;
+        }
+    }
+    .ammenities-block {
+    }
+    .action-block {
+        display: inline-block;
+        .btn {
+            padding: 15px;
+            font-size: 1.5rem;
+            min-width: 272px;
+        }
+    }
+
+    .form-label {
+        color: darken($secondary-main, 5%);
+    }
+}
+
+// -------------------------------------------------------
+// scoped media queries
+@media screen and (max-width: 1200px) {
+    .filter-component {
+        flex-direction: column;
+        .column-1 {
+            > div {
+                display: block;
+            }
+            max-width: none;
+            flex: auto;
+        }
+        .column-2 {
+            margin-top: 20px;
+            flex: 1;
+            max-width: none;
+        }
+        .column-3 {
+            flex: 1;
+
+            max-width: none;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .dates-block {
+            > div {
+                flex: 1 0 50%;
+            }
+        }
+
+        .action-block {
+            .btn {
+                padding: 8px 20px;
+                font-size: 1.3rem;
+                min-width: initial;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filter-component {
+        .dates-block {
+            display: block;
+            > div {
+                flex: 1 0 100%;
+            }
+        }
+    }
+}

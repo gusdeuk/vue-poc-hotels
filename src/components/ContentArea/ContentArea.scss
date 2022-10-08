@@ -1,0 +1,15 @@
+/* ------------------------------------------------ */
+/* scoped styles */
+/* ------------------------------------------------ */
+@import "../../css/common/palette";
+
+$nav-height: 110px;
+$foot-height: 30px;
+.content-wrapper {
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    right: 0;
+    bottom: $foot-height;
+    padding: 20px 15px;
+}

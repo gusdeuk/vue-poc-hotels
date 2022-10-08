@@ -1,0 +1,55 @@
+/* ------------------------------------------------ */
+/* scoped styles */
+/* ------------------------------------------------ */
+@import "../../css/common/palette";
+
+.header-wrapper {
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 16%);
+    .brand {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        .iso {
+            display: block;
+            height: 80px;
+            margin-left: 20px;
+        }
+        .logo {
+            display: block;
+            height: 50px;
+            position: relative;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-wrapper {
+        display: block;
+        .brand {
+            height: 80px;
+            flex: 1 1 100%;
+            justify-content: center;
+            .iso {
+                margin-left: 0;
+                position: absolute;
+                height: 62px;
+                left: 15px;
+            }
+            .logo {
+                height: 40px;
+                margin-left: 5px;
+                position: absolute;
+                right: 19px;
+            }
+        }
+    }
+}
